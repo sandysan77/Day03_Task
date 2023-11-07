@@ -44,19 +44,26 @@ console.log(ele);
 
 
 // Return all the prime numbers in an array
-let prime = function(){
-    let numberArr = 10;
-    let temp=[];
-    
+let primeNo = function(prim){
+    let numberArr = prim
+    let tempPrime=[];
     for(var i=2;i<numberArr;i++){
-        if(numberArr%i==0){
-                console.log(i)
-        }
-
+        var count =0;
+        for(var j=2;j<numberArr;j++){
+            if(i%j==0){
+                count++;
+                // console.log(i)
+            }
+        }  
+        if(count==1){
+            tempPrime.push(i);
+            }
     }
+    return tempPrime;
 }
 
-prime();
+var final = primeNo(20);
+console.log(final); 
 
 
-
+//Return all the palindromes in an array
