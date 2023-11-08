@@ -67,3 +67,59 @@ console.log(final);
 
 
 //Return all the palindromes in an array
+let palindrome = function(palinVal){
+
+    let paliTemp=[];
+    
+        for(let pali in palinVal){
+          
+          var palilen =palinVal[pali].split('');
+          
+            for(let i=0;i<palilen.length;i++){
+              var boolean = false;
+              var j = palilen.length-1;
+              if(i!=(j-i)){
+                  if(palilen[i]== palilen[j-i]){
+                    boolean = true;
+                    }
+              }  
+                 
+            }
+            
+            if(boolean){
+              paliTemp.push(palinVal[pali]);
+              }
+        }
+    
+    return paliTemp;
+    }
+    
+    let finalPalindrome = palindrome(['abc','car','ada','racecar','cool']);    
+    console.log(finalPalindrome);
+
+// Remove duplicates from an array   
+
+let duplicates = function(dupli){
+    let tempDup=[];
+      
+      for(let dup in dupli){
+          var boolean =false;
+              for(let dup1 in dupli){
+                var boolean =false;
+                    if(dup!=dup1){
+                        if(dupli[dup]==dupli[dup1]){
+                          boolean =true;
+                          break;
+                       }
+                    }
+              }
+              if(!boolean){
+                tempDup.push(dupli[dup]);
+                }
+      }
+      
+      return tempDup;
+  }
+  
+  let finalDuplicates = duplicates(['abc','car','abc','racecar','dog','abc']);    
+  console.log(finalDuplicates);
