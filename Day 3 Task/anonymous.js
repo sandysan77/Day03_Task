@@ -123,3 +123,48 @@ let duplicates = function(dupli){
   
   let finalDuplicates = duplicates(['abc','car','abc','racecar','dog','abc']);    
   console.log(finalDuplicates);
+
+
+  // Return median of two sorted arrays of the same size   
+
+  let twoArr = function(arr1,arr2){
+    
+    let firstArray = arr1.toString().split(',');
+    let secondArray = arr2.toString().split(',');
+
+    if((firstArray.length)%2==0){
+        var firstArr =0;
+        for(let i=0;i<firstArray.length;i++){
+            
+            firstArr = firstArr + parseInt(firstArray[i]);  
+            
+    }
+   
+    var fa1 =firstArr/firstArray.length;
+
+    }else{
+            
+    }
+
+    if((secondArray.length)%2==0){
+      var secArr =0;
+        for(let j=0;j<secondArray.length;j++){
+            
+            secArr =secArr + parseInt(secondArray[j]);
+        }
+   
+      var sa2 =secArr/secondArray.length;  
+
+    }else{
+            
+    }
+
+    return (fa1+sa2)/2;
+ 
+}   
+
+let arr1 = [4,2,];
+let arr2 = [8,2];
+
+let twoArrMedian = twoArr(arr1,arr2);
+console.log(twoArrMedian);
