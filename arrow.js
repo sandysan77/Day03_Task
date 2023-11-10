@@ -96,30 +96,3 @@ let palindrome = (palinVal) => {
     
     let finalPalindrome = palindrome(['abc','car','ada','racecar','cool']);    
     console.log(finalPalindrome);
-
-// Remove duplicates from an array   
-
-let duplicates = (dupli) => {
-    let tempDup=[];
-      
-      for(let dup in dupli){
-          var boolean =false;
-              for(let dup1 in dupli){
-                var boolean =false;
-                    if(dup!=dup1){
-                        if(dupli[dup]==dupli[dup1]){
-                          boolean =true;
-                          break;
-                       }
-                    }
-              }
-              if(!boolean){
-                tempDup.push(dupli[dup]);
-                }
-      }
-      
-      return tempDup;
-  }
-  
-  let finalDuplicates = duplicates(['abc','car','abc','racecar','dog','abc']);    
-  console.log(finalDuplicates);
