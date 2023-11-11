@@ -163,7 +163,7 @@ let duplicates = function(dupli){
  
 }   
 
-let arr1 = [4,2,];
+let arr1 = [4,2];
 let arr2 = [8,2];
 
 let twoArrMedian = twoArr(arr1,arr2);
