@@ -129,8 +129,8 @@ let duplicates = function(dupli){
 
   let twoArr = function(arr1,arr2){
     
-    let firstArray = arr1.toString().split(',');
-    let secondArray = arr2.toString().split(',');
+    let firstArray = arr1
+    let secondArray = arr2
 
     if((firstArray.length)%2==0){
         var firstArr =0;
