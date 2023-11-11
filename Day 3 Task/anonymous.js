@@ -168,3 +168,23 @@ let arr2 = [8,2];
 
 let twoArrMedian = twoArr(arr1,arr2);
 console.log(twoArrMedian);
+
+
+// Rotate an array by k times
+
+let rotate = function(arr,times){
+  
+    var normaArr = arr;
+    var rotateTimes = times;
+    
+    for(var i=0;i<rotateTimes;i++){
+      
+      normaArr.unshift(normaArr[normaArr.length-1]);
+      normaArr.pop();
+      
+    }
+    return normaArr;
+}
+    
+  let rotateFinal  = rotate([1,2,3,4,5],2);//n times  
+  console.log(rotateFinal)
